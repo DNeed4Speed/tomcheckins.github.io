@@ -1,0 +1,149 @@
+<!--TOM Team Website Version 2-->
+<!--checkin.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TOM Team | Check In</title>
+    <meta name="author" content="Joseph Billanes">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!--The Very Top of the Page-->
+    <header>
+        <!--Make a container for the header of the webpage-->
+        <div class="container">
+            <!--This will go on the TOP LEFT-->
+            <div id="branding">
+                <h1>TOM Team Amazon</h1>
+            </div>
+            <!--Literally the Navigation Bar, the links for other pages are here-->
+            <nav>
+                <ul>
+                    <!--The links-->
+                    <!--Only put the current class on the CURRENT page, obviously, you'll do the same for the other pages-->
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="checkin.html">Check In</a></li>
+                    <li><a href="info.html">Info</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--For "Section IDs", name doesn't affect actual code, you name the section however you want-->
+
+    <!--The "div class" name matters, "container" should be used for well, containers-->
+
+    <!--"box" for a "div class" is useful to make smaller sections within a "container", it's like you're splitting the container into "boxes"-->
+
+    <section id="main">
+        <!--Add a container-->
+        <div class="container">
+            <article id="main-col">
+                <h2 class="page-title"><u>Check - In: Introduction</u></h2>
+                <p>
+                    In TOM Team, Check - In is by far the most complicated process to learn and even more importantly,
+                    do correctly.
+                    It requires the Assocaite to memeorize several pieces of information and navigate multiple
+                    applications within a short period of time.
+                </p>
+
+                <h2 class="page-title"><u>Check - In: Procedure</u></h2>
+                <p>- Starting a Check - In:</p>
+
+                <!--Use a list instead of the paragraphs-->
+                <ul style="font-size:20px">
+                    <li>
+                        Check <i>Virtually</i> and <i>Physically</i> the Tractor and Trailer match (this should
+                        automatically happen on GEM)
+                    </li>
+                    <li>
+                        Verify the Tractor License Plate and Trailer ID, using the cameras, to see that the virtual
+                        information fully matches what is physically at Check - In
+                    </li>
+                    <li>
+                        Once the information has been verified, ask the driver either on the <i>Phone</i> or
+                        <i>Directly</i> for their <b>VRID</b> / <b>Load ID</b> / <b>BOL</b>
+                        (You can say: <i>"What is the LAST 4 of your Load ID / BOL?"</i>)
+                    </li>
+                    <p style="margin-right:90px">
+                        <b>Note:</b> Always verify whether the Driver is <i>Picking Up</i> a second trailer or
+                        <i>Bobtailing</i> out of the yard, even when GEM does not
+                        generate a VRID or give any other indication
+                    </p>
+                    <li>
+                        After the Tractor, Trailer and VRID have been verified to be a <b>Full Match</b>, you can now
+                        Check In the Driver on GEM by clicking the <i>Check In</i>
+                        button
+                    </li>
+                </ul>
+
+                <h2 class="page-title"><u>Check - In: Virtual Procedure</u></h2>
+
+                <ul style="font-size:20px">
+                    <li>
+                        Sometimes, you will have to enter the Tractor License Plate and Trailer ID manually - GEM is not
+                        perfect and will not
+                        always enter all the information itself
+                    </li>
+
+                    <p style="margin-right:90px"><b>Note:</b> The same goes for the <i>VRID</i></p>
+
+                    <li>
+                        When a Driver arrives with a Trailer, add the Trailer by selecting <i>Add Equipment</i> - then
+                        select
+                        <i>No License Plate</i> and enter the Trailer ID in full
+                    </li>
+                    <p style="margin-right:90px">
+                        <b>Note:</b> Do this after verifying the Tractor License Plate - Use the cameras
+                    </p>
+                    <li>
+                        Add the VRID by selecting <i>Add Appointment</i> on
+                        the Bottom-Right portion of the screen
+                    </li>
+                    <li>
+                        To be safe: Enter this information into Slack after you're done - better to keep a record of a
+                        Driver that was not automatically recognized by GEM
+                    </li>
+                </ul>
+
+            </article>
+
+            <!--Time a sidebar, hell yeah-->
+            <aside id="sidebar">
+                <h2 style="color:rgb(0, 0, 0);"><u style="font-size: 30px;">Processes</u></h2>
+                <div class="dark">
+                    <h3 class="current"><a href="checkin.html">Check - In (General)</a></h3>
+                    <h3><a href="outbound.html">Outbound</a></h3>
+                    <h3><a href="inbound.html">Inbound</a></h3>
+                    <h3><a href="totes.html">Transfer Totes / Universal Pallets</a></h3>
+                    <h3><a href="reactive.html">Reactive</a></h3>
+                    <h3><a href="non.html">Non - Inventory</a></h3>
+                    <h3><a href="empty.html">Empty Carts</a></h3>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
+    <!--Always add a "footer" on the bottom of the webpage, it completes the look-->
+    <!--
+    <footer>
+        <p>Amazon TOM Team - made by Joseph Billanes (billanes)</p>
+    </footer>
+    -->
+
+    <div id="page-container">
+        <div id="content-wrap">
+          <!-- all other page content -->
+        </div>
+        <footer id="footer">Amazon TOM Team - made by Joseph Billanes (billanes)</footer>
+    </div>
+
+</body>
+
+</html>
