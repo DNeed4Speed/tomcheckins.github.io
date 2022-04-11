@@ -1,0 +1,100 @@
+<!--TOM Team Website Version 2-->
+<!--empty.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TOM Team | Check In</title>
+    <meta name="author" content="Joseph Billanes">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!--The Very Top of the Page-->
+    <header>
+        <!--Make a container for the header of the webpage-->
+        <div class="container">
+            <!--This will go on the TOP LEFT-->
+            <div id="branding">
+                <h1>TOM Team Amazon</h1>
+            </div>
+            <!--Literally the Navigation Bar, the links for other pages are here-->
+            <nav>
+                <ul>
+                    <!--The links-->
+                    <!--Only put the current class on the CURRENT page, obviously, you'll do the same for the other pages-->
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="checkin.html">Check In</a></li>
+                    <li><a href="info.html">Info</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--For "Section IDs", name doesn't affect actual code, you name the section however you want-->
+
+    <!--The "div class" name matters, "container" should be used for well, containers-->
+
+    <!--"box" for a "div class" is useful to make smaller sections within a "container", it's like you're splitting the container into "boxes"-->
+
+    <section id="main">
+        <!--Add a container-->
+        <div class="container">
+            <article id="main-col">
+                <h2 class="page-title"><u>Check - In: Empty Carts</u></h2>
+                <p>- Empty Carts Pickup</p>
+
+                <ul style="font-size:20px">
+                    <li>
+                        Verfiy the <i>Trailer License Plate</i> and <i>VRID</i> on GEM
+                    </li>
+                    <li>
+                        Put the <i>VRID</i> in the <b>tom-ship-cart-pu-and-do</b> Slack chat. Mention 155 in the message
+                    </li>
+                    <div class="non">
+                        <p><b><u>Example:</u></b></p>
+                        <p>1135HT6S4 picking up Carts heading to 155</p>
+                    </div>
+                    <li>
+                        Tell the Driver that they're going to park along the fence and walk into 155A
+                    </li>
+                </ul>
+            </article>
+
+            <!--Time a sidebar, hell yeah-->
+            <aside id="sidebar">
+                <h2 style="color:rgb(0, 0, 0);"><u style="font-size: 30px;">Processes</u></h2>
+                <div class="dark">
+                    <h3><a href="checkin.html">Check - In (General)</a></h3>
+                    <h3><a href="outbound.html">Outbound</a></h3>
+                    <h3><a href="inbound.html">Inbound</a></h3>
+                    <h3><a href="totes.html">Transfer Totes / Universal Pallets</a></h3>
+                    <h3><a href="reactive.html">Reactive</a></h3>
+                    <h3><a href="non.html">Non - Inventory</a></h3>
+                    <h3 class="current"><a href="empty.html">Empty Carts</a></h3>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
+    <!--Always add a "footer" on the bottom of the webpage, it completes the look-->
+    <!--
+    <footer>
+        <p>Amazon TOM Team - made by Joseph Billanes (billanes)</p>
+    </footer>
+    -->
+
+    <div id="page-container">
+        <div id="content-wrap">
+          <!-- all other page content -->
+        </div>
+        <footer id="footer">Amazon TOM Team - made by Joseph Billanes (billanes)</footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+/* Now, this is where the absolute MAGIC happens, you can format everything in the css document MUCH faster than in HTML */
+
+/* Everything here is a CLASS, even it it says it nowhere */
+
+/* Format everything here */
+
+/* KEY: # refers to the section id names
+        . refers to the div class names
+        header a, header ul, header li and header are exactly what you'd expect 
+
+/* Start with the body of the HTML doc */
+body {
+    /*There are 2 ways you can format the text, both are correct*/
+    /*This way*/
+    /*
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    
+    /*Or this way*/
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+
+    /*They do the same thing*/
+
+    /*Put the other stuff*/
+    padding: 0;
+    margin: 0;
+    /*For the color editor, press control+e*/
+    background-color: #f4f4f4;
+}
+
+/* Now it's time for the container class for the div */
+/* This affects all the "container" instances */
+
+/* Global */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* To add space between list elements */
+li {
+    margin-bottom: 15px;
+}
+
+/* You actually now apply this to any text, pretty sweet - gives it a black bacground */
+.dark {
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* This is for that one section in Outbound to show the Slack example */
+.slack {
+    padding: 10px;
+    background: #35424a;
+    color: #ffffff;
+    width:200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.SSP {
+    padding: 10px;
+    background: #35424a;
+    color: #ffffff;
+    width:800px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.non {
+    padding: 10px;
+    background: #35424a;
+    color: #ffffff;
+    width:400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* To INDENT any text within the div class labeled "indent" */
+.indent {
+    text-indent: 50px;
+}
+
+/* All ul will have this applied */
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: #c9970e;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #ffffff 3px solid;
+}
+
+/* For the links in the header */
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+/* These two things with the #branding make the list of links centered with the "TOM Team Amazon", not even joking */
+
+/* You put a hastag for the div id */
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/* This just makes the link you click on the highlighted one when opening their respected page */
+/* As well as for the Title */
+header .highlight,
+header .current a {
+    color: darkblue;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* Showcase */
+/* This is what truly adjusts an image within a container or section */
+#showcase {
+    min-height: 500px;
+    /*That linear-gradient addition there literally is needed to make the image darker, holy*/
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/amazon.jpg') no-repeat 0 -665px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 30px;
+}
+
+/* Boxes */
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img {
+    width: 180px;
+}
+
+/* Sidebar */
+/* You actually can apply this to any text - puts it on the right side of the webpage */
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+
+    position: fixed;
+    right: 5%;
+}
+
+/* Whatever is clicked on the sidebar is highlighted */
+#sidebar .highlight,
+#sidebar .current a {
+    color: rgb(236, 134, 0);
+    font-weight: bold;
+}
+
+/* For the links in the sidebar */
+#sidebar a, h3 {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#sidebar a:hover {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* Main-col */
+/* This is used for "articles" so they can wrap properly around the sidebars */
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+/* This is used to edit the font in the p of the artciles of the page */
+#main .container p{
+    font-size: 20px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #4a4a4a;
+    text-align: center; 
+}
+
+/* Another way to put the Footer */
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+    background-color: #4a4a4a;
+}
+
+/* Media Queries - this is needed for all the elements to adjust to any screen size */
+@media(max-width: 768px) {
+
+    header #branding,
+    header nav,
+    haeder nav li,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+    }
+}

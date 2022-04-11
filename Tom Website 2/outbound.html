@@ -1,0 +1,155 @@
+<!--TOM Team Website Version 2-->
+<!--outbound.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TOM Team | Check In</title>
+    <meta name="author" content="Joseph Billanes">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!--The Very Top of the Page-->
+    <header>
+        <!--Make a container for the header of the webpage-->
+        <div class="container">
+            <!--This will go on the TOP LEFT-->
+            <div id="branding">
+                <h1>TOM Team Amazon</h1>
+            </div>
+            <!--Literally the Navigation Bar, the links for other pages are here-->
+            <nav>
+                <ul>
+                    <!--The links-->
+                    <!--Only put the current class on the CURRENT page, obviously, you'll do the same for the other pages-->
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="checkin.html">Check In</a></li>
+                    <li><a href="info.html">Info</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--For "Section IDs", name doesn't affect actual code, you name the section however you want-->
+
+    <!--The "div class" name matters, "container" should be used for well, containers-->
+
+    <!--"box" for a "div class" is useful to make smaller sections within a "container", it's like you're splitting the container into "boxes"-->
+
+    <section id="main">
+        <!--Add a container-->
+        <div class="container">
+            <article id="main-col">
+                <h2 class="page-title"><u>Check - In: Outbound</u></h2>
+                <p>- Outbound Pickup</p>
+
+                <ul style="font-size:20px">
+                    <li>
+                        Verify the <i>Tractor License Plate</i> matches on GEM
+                    </li>
+                    <li>
+                        Gather the last four digits of the <i>VRID</i>
+                    </li>
+                    <li>
+                        Ask for the Driver's <i>Phone Number</i>
+                    </li>
+                    <li>
+                        Enter the <i>License Plate</i>, <i>VRID</i> and <i>Phone Number</i> onto <b>Slack</b> - under
+                        <b>tom-check-in-checkout</b>
+                    </li>
+
+                    <!--Break-->
+                    <br>
+
+                    <div class="slack">
+                        <p><u>Here's how the info would look on Slack:</u></p>
+                        <p>YP01477</p>
+                        <p>VRID 115BJVPMM</p>
+                        <p>408 992 5066</p>
+                    </div>
+
+                    <!--Break-->
+                    <br>
+
+                    <li>
+                        Enter the VRID on SSP (Outbound) to see if the Outbound Pickup is ready. Primarily check if it
+                        says
+                        <i>Finished Loading</i>
+                        as well as any scheduled <i>Hostler Moves</i>
+                    </li>
+
+                    <p style="margin-right:90px"><b>Note:</b> 2 Locations the Outbound Trailer is located are either a
+                        <b>Dock
+                            Door</b> or <b>Full Slip (301-313)</b></p>
+
+                    <!--Break-->
+                    <br>
+
+                    <div class="SSP">
+                        <p style="margin-right:90px">
+                            <i><b><u>Finished Loading:</u></b></i> You can check with Ship Clerk that the load is actaully
+                            ready by
+                            messaging the <b>tom-ship-clerk-escalations</b> chat typing <i>" *VRID*, is this load ready?
+                                <span style="color:orange">@present member</span></i> ". If it is, send the Driver to the Dock Door the Trailer is located
+
+                        </p>
+                        <p style="margin-right:90px">
+                            <b>Note:</b> Make sure the Driver knows to attach to the Trailer on a <i>Green Light</i>
+                        </p>
+                        <p style="margin-right:90px">
+                            <i><b><u>Hostler Moves:</u></b></i> if there is a scheduled move for the Outbound Trailer a Driver
+                            is picking up and a Driver is here to pick up the same Trailer, on the Radio say: <i>Yard
+                                Drivers, who's in the move for
+                                (dock door to the full slips), I have the Driver here at the gate."
+                            </i>
+                        </p>
+                    </div>
+
+                    <!--Break-->
+                    <br>
+
+                    <li>
+                        If a Driver's Outbound Load is not ready, inform the Driver <i>"Your load isn't ready,
+                            please park along the fence and wait for us to call you."</i> Send the Driver into the Yard
+                    </li>
+                </ul>
+            </article>
+
+            <!--Time a sidebar, hell yeah-->
+            <aside id="sidebar">
+                <h2 style="color:rgb(0, 0, 0);"><u style="font-size: 30px;">Processes</u></h2>
+                <div class="dark">
+                    <h3><a href="checkin.html">Check - In (General)</a></h3>
+                    <h3 class="current"><a href="outbound.html">Outbound</a></h3>
+                    <h3><a href="inbound.html">Inbound</a></h3>
+                    <h3><a href="totes.html">Transfer Totes / Universal Pallets</a></h3>
+                    <h3><a href="reactive.html">Reactive</a></h3>
+                    <h3><a href="non.html">Non - Inventory</a></h3>
+                    <h3><a href="empty.html">Empty Carts</a></h3>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
+    <!--Always add a "footer" on the bottom of the webpage, it completes the look-->
+    <!--
+    <footer>
+        <p>Amazon TOM Team - made by Joseph Billanes (billanes)</p>
+    </footer>
+    -->
+
+    <div id="page-container">
+        <div id="content-wrap">
+          <!-- all other page content -->
+        </div>
+        <footer id="footer">Amazon TOM Team - made by Joseph Billanes (billanes)</footer>
+    </div>
+
+</body>
+
+</html>

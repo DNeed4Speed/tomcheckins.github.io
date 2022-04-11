@@ -1,0 +1,316 @@
+<!--TOM Team Website Version 2-->
+<!--info.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TOM Team | Info</title>
+    <meta name="author" content="Joseph Billanes">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--For the image-->
+    <style>
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        </style>
+
+    <!--For the Table-->
+    <style>
+        #trailer {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        #trailer td, #trailer th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        
+        #trailer tr:nth-child(even){background-color: #f2f2f2;}
+        
+        #trailer tr:hover {background-color: #ddd;}
+        
+        #trailer th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #bb8b06;
+          color: white;
+        }
+    </style>
+
+    <!--For the Accordion-->
+    <style>
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!--The Very Top of the Page-->
+    <header>
+        <!--Make a container for the header of the webpage-->
+        <div class="container">
+            <!--This will go on the TOP LEFT-->
+            <div id="branding">
+                <h1>TOM Team Amazon</h1>
+            </div>
+            <!--Literally the Navigation Bar, the links for other pages are here-->
+            <nav>
+                <ul>
+                    <!--The links-->
+                    <!--Only put the current class on the CURRENT page, obviously, you'll do the same for the other pages-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="checkin.html">Check In</a></li>
+                    <li class="current"><a href="info.html">Info</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--For "Section IDs", name doesn't affect actual code, you name the section however you want-->
+
+    <!--The "div class" name matters, "container" should be used for well, containers-->
+
+    <!--"box" for a "div class" is useful to make smaller sections within a "container", it's like you're splitting the container into "boxes"-->
+
+    <section id="main">
+        <div class="container">
+
+            <h2>Extra Information</h2>
+
+            <!--DROP OFF LOCATIONS-->
+            <button class="accordion"><b>Trailer Drop Off Locations:</b></button>
+                <div class="panel">
+                    <table id="trailer">
+                        <tr>
+                          <th>Location</th>
+                          <th>Description</th>
+                          <th>Reason (under GEM)</th>
+                        </tr>
+                        <tr>
+                          <td>FR98 - FR100</td>
+                          <td>HCA8 / Fresh Inbound</td>
+                          <td>Unscheduled</td>
+
+                        </tr>
+                        <tr>
+                          <td>FR100 - FR106</td>
+                          <td>HCA8 / Fresh Outbound</td>
+                          <td>Unscheduled</td>
+
+                        </tr>
+                        <tr>
+                          <td>FR107</td>
+                          <td>TOM Dock Door</td>
+                          <td>Unscheduled</td>
+                        </tr>
+                        <tr>
+                            <td>DS108 - DS124</td>
+                            <td>AZNG EMPTY</td>
+                            <td>TransfersInitalPlacement</td>
+                        </tr>
+                        <tr>
+                            <td>DS185 - NC205</td>
+                            <td>Non - Inventory Loaded / Empty</td>
+                            <td>Non-Inventory</td>
+                        </tr>
+                        <tr>
+                            <td>301 - 316</td>
+                            <td>Outbound Ready</td>
+                            <td>Outbound</td>
+                        </tr>
+                        <tr>
+                            <td>320 - 381</td>
+                            <td>Empty</td>
+                            <td>TransfersInitalPlacement</td>
+                        </tr>
+                        <tr>
+                            <td>382 - 416</td>
+                            <td>Empty Go Carts / Empty Outbound</td>
+                            <td>goCarts</td>
+                        </tr>
+                        <tr>
+                            <td>419 - 453</td>
+                            <td>Empty Inbound</td>
+                            <td>TransfersInitalPlacement</td>
+                        </tr>
+                        <tr>
+                            <td>454 - 471</td>
+                            <td>Loaded Inbound</td>
+                            <td>transfertotes / pallets / full gaylords / universal pallets</td>
+                        </tr>
+                        <tr>
+                            <td>472 - 500</td>
+                            <td>Loaded Inbound</td>
+                            <td>TransfersInitalPlacement / Transshipment / TransferDefects</td>
+                        </tr>
+                        <tr>
+                            <td>501 - 533</td>
+                            <td>PBRK / ACNI</td>
+                            <td>Non-Inventory</td>
+                        </tr>
+                        <tr>
+                            <td>SL01 - SL15</td>
+                            <td>Pup Loaded / Empty</td>
+                            <td>Non-Inventory</td>
+                        </tr>
+                    </table>
+                </div>
+
+            <!--TRAILER SCAC-->
+            <button class="accordion"><b>Trailer SCAC</b></button>
+            <div class="panel">
+                <table id="trailer">
+                    <tr>
+                      <th>SCAC</th>
+                      <th>Trailer Carrier</th>
+                    </tr>
+                    <tr>
+                      <td>AZNG</td>
+                      <td>Amazon</td>
+                    </tr>
+                    <tr>
+                      <td>UPSS</td>
+                      <td>UPS 53' Trailer</td>
+                    </tr>
+                    <tr>
+                      <td>FDEG</td>
+                      <td>FEDEX</td>
+                    </tr>
+                    <tr>
+                        <td>CTII</td>
+                        <td>Central Transportation</td>
+                    </tr>
+                    <tr>
+                        <td>KRSG</td>
+                        <td>Kross</td>
+                    </tr>
+                    <tr>
+                        <td>ATBL</td>
+                        <td>Aman Trucking Line</td>
+                    </tr>
+                    <tr>
+                        <td>EXLA</td>
+                        <td>Estes 53' Trailer / Pup</td>
+                    </tr>
+                    <tr>
+                        <td>AZNU</td>
+                        <td>Amazon Intermodal</td>
+                    </tr>
+                    <tr>
+                        <td>HJBI</td>
+                        <td>JB Hunt Intermodal</td>
+                    </tr>
+                    <tr>
+                        <td>ACNI</td>
+                        <td>Premier GRIEF</td>
+                    </tr>
+                    <tr>
+                        <td>GATI</td>
+                        <td>Gardner</td>
+                    </tr>
+                    <tr>
+                        <td>ASND</td>
+                        <td>Cheema</td>
+                    </tr>
+                    <tr>
+                        <td>SWFT</td>
+                        <td>Swift</td>
+                    </tr>
+                    <tr>
+                        <td>UPGF</td>
+                        <td>UPS Pup</td>
+                    </tr>
+                </table>
+
+                <p>Here is a list of the different types of Trailers found within the Yard</p>
+                <p>The most <b>common</b> Trailers are:</p>
+                <ul>
+                    <li>ANZG</li>
+                    <li>ANZU</li>
+                    <li>UPSS</li>
+                    <li>HJBI</li>
+                </ul>
+            </div>
+
+            <!--MAP-->
+            <button class="accordion"><b>Map</b></button>
+                <div class="panel">
+                    <img src="./img/Yard.png">
+                </div>
+
+            <!--Credits-->
+            <button class="accordion"><b>Credits</b></button>
+                <div class="panel">
+                    <h1>This website was made by Joseph Billanes (billanes) <i>billanes@amazon.com</i></h1>
+                    <h1>The information provided for this site was produced by David Bernal (dvibe) <i>dvibe@amazon.com</i></h1>
+                    <a href="./pdf/TOM Check In Guide.pdf"><h1>View the Pdf Document Here</h1></a>
+                </div>
+        </div>
+    </section>
+
+    <!--Always add a "footer" on the bottom of the webpage, it completes the look-->
+    <!--
+    <footer>
+        <p>Amazon TOM Team - made by Joseph Billanes (billanes)</p>
+    </footer>
+    -->
+
+    <div id="page-container">
+        <div id="content-wrap">
+          <!-- all other page content -->
+        </div>
+        <footer id="footer">Amazon TOM Team - made by Joseph Billanes (billanes)</footer>
+    </div>
+
+    <!--Javascript for the Accordion-->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
